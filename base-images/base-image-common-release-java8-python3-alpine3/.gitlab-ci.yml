@@ -1,0 +1,12 @@
+variables:
+  IMAGE_NAME: 'base-java8-python3:alpine-0.3'
+  DOCKER_REGISTRY: 'docker.4pd.io'
+
+stages:
+  - build_and_push_image
+
+build_and_push_image:
+  stage: build_and_push_image
+  script:
+    - sh build-image.sh
+    - sh push-image.sh

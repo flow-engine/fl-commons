@@ -1,0 +1,1 @@
+docker push ${DOCKER_REGISTRY}/meteor/${IMAGE_NAME}
